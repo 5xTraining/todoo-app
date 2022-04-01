@@ -1,0 +1,16 @@
+{
+  "name": "todoo_api_frontend",
+  "version": "1.0.0",
+  "author": "Eddie <eddie@5xcampus.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "devDependencies": {
+    "@tailwindcss/custom-forms": "^0.2.1",
+    "parcel": "^2.4.1",
+    "postcss": "^8.4.12",
+    "tailwindcss": "^3.0.23"
+  }
+}

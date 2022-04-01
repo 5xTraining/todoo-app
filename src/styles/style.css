@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.handwrite_font {
+  font-family: 'Shadows Into Light', cursive;
+}
+
+h1.banner {
+  @apply text-6xl font-thin handwrite_font;
+}
+
+main.main {
+  @apply bg-white rounded-sm shadow-sm;
+}
+
+.navbar > a {
+  @apply px-4 py-1 text-xl text-gray-800 hover:text-gray-500;
+}
+
+section.todo-list {
+  @apply px-8 my-2 bg-white rounded-sm shadow-sm;
+}
+
+ul.items {
+  @apply py-1;
+}
+
+ul.items > li {
+  @apply flex items-center justify-between py-5 mb-4 text-2xl border-b border-gray-200 last:border-none last:mb-0;
+}
+
+ul.items input[type="checkbox"] {
+  @apply mr-2 border border-gray-400 rounded form-checkbox;
+}
+
+ul.items .item-content {
+  @apply flex items-center px-2;
+}
+
+ul.items .item-content label {
+  @apply flex items-center px-2 cursor-pointer;
+}
+
+ul.items .item-control {
+  @apply flex;
+}
+
+.item-control a {
+  @apply px-4 py-3 mx-1 bg-gray-100 rounded-sm hover:bg-gray-200;
+}
+
+.icon {
+  @apply w-4 h-4;
+}
+
+
+ul.items li.completed .content {
+  @apply text-gray-400 line-through;
+}
+
+ul.items li.completed .item-control .edit {
+  @apply hidden;
+}

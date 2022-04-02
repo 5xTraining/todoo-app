@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TODO App</title>
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/style.scss" />
     <script src="scripts/todo.js" defer type="module"></script>
   </head>
 
@@ -25,12 +25,22 @@
     <main class="px-6 todo-app main">
       <header>
         <nav class="flex justify-end pt-6 pb-3 navbar">
-          <a href="#login">登入</a>
-          <a href="#sign_up" class="border-l border-l-gray-300">註冊</a>
+          <a id="login" href="#login">登入</a>
+          <a id="sign_up" href="#sign_up" class="border-l border-l-gray-300">註冊</a>
         </nav>
       </header>
 
-      <section class="flex justify-center pt-4 pb-8 taskSection">
+      <section id="signUpSection">
+        <form>
+          <div class="field">
+            <label for="">Email</label>
+            <input type="email" class="email">
+          </div>
+
+        </form>
+      </section>
+
+      <section id="taskSection">
         <input autofocus type="text" id="taskInput" autocomplete="off" spellcheck="false" placeholder="做點重要的事吧..." />
         <button id="addBtn" class="px-6 py-2 text-xl rounded-sm rounded-r bg-rose-500 text-rose-100 hover:bg-rose-400">
           新增

@@ -8,6 +8,7 @@
     "build": "parcel build src/index.html"
   },
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.4.1",
     "@tailwindcss/custom-forms": "^0.2.1",
     "parcel": "^2.4.1",
     "postcss": "^8.4.12",

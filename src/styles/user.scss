@@ -1,6 +1,4 @@
-section#signUpSection {
-  @apply w-full pt-4 pb-8;
-
+section#userSection {
   h1 {
     @apply mb-4 ml-1 text-3xl;
   }
@@ -25,5 +23,13 @@ section#signUpSection {
         @apply w-full px-3 py-2 my-2 text-2xl rounded-sm sm:w-1/2 bg-rose-500 text-rose-50;
       }
     }
+  }
+
+  section#loginSection {
+    @apply w-full pt-4 pb-8;
+  }
+
+  section#signUpSection {
+    @apply w-full pt-4 pb-8;
   }
 }

@@ -1,16 +1,4 @@
-const loginLinks = document.querySelectorAll(".loginLink")
-const signUpLinks = document.querySelectorAll(".signUpLink")
+import { initPages, showLoginPage, showSignUpPage, showTaskPage } from "./pages"
+initPages()
 
-loginLinks.forEach((link) => {
-  link.addEventListener("click", (e) => {
-    e.preventDefault()
-    console.log("login")
-  })
-})
-
-signUpLinks.forEach((link) => {
-  link.addEventListener("click", (e) => {
-    e.preventDefault()
-    console.log("sign up")
-  })
-})
+// 程式碼寫在這裡

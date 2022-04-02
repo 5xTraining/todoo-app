@@ -1,0 +1,29 @@
+section#signUpSection {
+  @apply w-full pt-4 pb-8;
+
+  h1 {
+    @apply mb-4 ml-1 text-3xl;
+  }
+
+  form {
+    @apply w-full px-0 py-3 border border-gray-100 shadow-sm sm:px-3 sm:py-6;
+
+    .field {
+      @apply px-2 py-2;
+
+      label {
+        h3 {
+          @apply text-xl;
+        }
+      }
+
+      input[type="email"], input[type="text"], input[type="password"] {
+        @apply w-full px-4 py-3 text-xl border border-gray-200 rounded-sm;
+      }
+
+      button {
+        @apply w-full px-3 py-2 my-2 text-2xl rounded-sm sm:w-1/2 bg-rose-500 text-rose-50;
+      }
+    }
+  }
+}

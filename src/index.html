@@ -25,16 +25,38 @@
     <main class="px-6 todo-app main">
       <header>
         <nav class="flex justify-end pt-6 pb-3 navbar">
-          <a id="login" href="#login">登入</a>
-          <a id="sign_up" href="#sign_up" class="border-l border-l-gray-300">註冊</a>
+          <a class="loginLink" href="#login">登入</a>
+          <a class="signUpLink" href="#sign_up" class="border-l border-l-gray-300">註冊</a>
         </nav>
       </header>
 
       <section id="signUpSection">
+        <h1>註冊帳號</h1>
         <form>
           <div class="field">
-            <label for="">Email</label>
-            <input type="email" class="email">
+            <label>
+              <h3>Email</h3>
+              <input type="email" autocomplete="off" spellcheck="false" placeholder="Email 信箱">
+            </label>
+          </div>
+
+          <div class="field">
+            <label>
+              <h3>暱稱</h3>
+              <input type="text" autocomplete="off" spellcheck="false" placeholder="要怎麼稱呼你呢？">
+            </label>
+          </div>
+
+          <div class="field">
+            <label>
+              <h3>密碼</h3>
+              <input type="password" autocomplete="off" spellcheck="false" placeholder="密碼，至少需要 6 個字">
+            </label>
+          </div>
+
+          <div class="items-center justify-between block sm:flex field">
+            <button>註冊</button>
+            <div class="text-xl text-gray-600">已經有帳號了？<a href="#" class="underline loginLink">登入</a></div>
           </div>
         </form>
       </section>

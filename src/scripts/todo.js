@@ -1,12 +1,16 @@
-const linkLogin = document.querySelector("#login")
-const linkSignUp = document.querySelector("#sign_up")
+const loginLinks = document.querySelectorAll(".loginLink")
+const signUpLinks = document.querySelectorAll(".signUpLink")
 
-linkLogin.addEventListener("click", (e) => {
-  e.preventDefault()
-  console.log("login")
+loginLinks.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault()
+    console.log("login")
+  })
 })
 
-linkSignUp.addEventListener("click", (e) => {
-  e.preventDefault()
-  console.log("sign up")
+signUpLinks.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault()
+    console.log("sign up")
+  })
 })

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="bg-gray-50">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,13 +7,20 @@
     <title>TODO App</title>
     <link rel="stylesheet" href="styles/style.css" />
     <script src="scripts/todo.js" defer type="module"></script>
+  </head>
 
-  <body class="container px-2 py-4 mx-auto bg-gray-50 ">
-    <h1 class="banner">TODO!</h1>
-    <div class="flex justify-between text-sm">
-      <p class="px-2 mb-2 text-gray-500">simple and studid todo app</p>
-      <p class="px-2 mb-2 text-gray-500">proudly powered by <a href="https://5xruby.tw" class="underline uppercase">5xcampus</a></p>
-    </div>
+  <body class="container px-2 py-4 mx-auto">
+    <header class="banner">
+      <h1>TODO!</h1>
+      <div class="subtitle">
+        <p class="text">simple and studid todo app</p>
+        <p class="hidden text sm:block">
+          proudly powered by <a href="https://5xruby.tw">5XCAMPUS</a> |
+          <a href="https://todoo.5xcamp.us">API</a> |
+          <a href="https://github.com/5xTraining/todoo-app">SOURCE</a>
+        </p>
+      </div>
+    </header>
 
     <main class="px-6 todo-app main">
       <header>
@@ -22,52 +29,129 @@
           <a href="#sign_up" class="border-l border-l-gray-300">註冊</a>
         </nav>
       </header>
-      <section class="flex justify-center pt-4 pb-8 taskSection">
-        <input autofocus type="text" id="taskInput" value="" class="w-10/12 px-5 py-3 text-2xl font-thin placeholder-gray-300 border border-gray-300 rounded-l focus:outline-none" placeholder="做點重要的事吧..." />
-        <button id="addBtn" class="px-6 py-2 text-xl rounded-sm rounded-r bg-rose-500 text-rose-100 hover:bg-rose-400">新增</button>
-      </section>
 
+      <section class="flex justify-center pt-4 pb-8 taskSection">
+        <input autofocus type="text" id="taskInput" autocomplete="off" spellcheck="false" placeholder="做點重要的事吧..." />
+        <button id="addBtn" class="px-6 py-2 text-xl rounded-sm rounded-r bg-rose-500 text-rose-100 hover:bg-rose-400">
+          新增
+        </button>
+      </section>
     </main>
 
     <section class="todo-list">
       <ul class="items">
+        <!-- item start -->
         <li>
           <div class="item-content">
             <label>
-              <input type="checkbox">
+              <input type="checkbox" />
               <p class="content">我要學 Ruby on Rails</p>
             </label>
           </div>
           <div class="item-control">
-            <a href="#"><img class="icon" src="assets/pen-to-square-solid.svg"></a>
-            <a href="#"><img class="icon" src="assets/trash-can-solid.svg"></a>
+            <a href="#" class="edit"><img class="icon" src="assets/pen-to-square-solid.svg" /></a>
+            <a href="#" class="delete"><img class="icon" src="assets/trash-can-solid.svg" /></a>
           </div>
         </li>
+        <!-- item end -->
+
+        <!-- item start -->
         <li class="completed">
           <div class="item-content">
             <label>
-              <input type="checkbox" checked>
+              <input type="checkbox" checked />
               <p class="content">我要學 Git</p>
             </label>
           </div>
           <div class="item-control">
-            <a href="#" class="edit"><img class="icon" src="assets/pen-to-square-solid.svg"></a>
-            <a href="#" class="delete"><img class="icon" src="assets/trash-can-solid.svg"></a>
+            <a href="#" class="edit"><img class="icon" src="assets/pen-to-square-solid.svg" /></a>
+            <a href="#" class="delete"><img class="icon" src="assets/trash-can-solid.svg" /></a>
           </div>
         </li>
+        <!-- item end -->
+
+        <!-- item start -->
         <li>
           <div class="item-content">
             <label>
-              <input type="checkbox">
+              <input type="checkbox" />
               <p class="content">我要學 JavaScript</p>
             </label>
           </div>
           <div class="item-control">
-            <a href="#"><img class="icon" src="assets/pen-to-square-solid.svg"></a>
-            <a href="#"><img class="icon" src="assets/trash-can-solid.svg"></a>
+            <a href="#" class="edit"><img class="icon" src="assets/pen-to-square-solid.svg" /></a>
+            <a href="#" class="delete"><img class="icon" src="assets/trash-can-solid.svg" /></a>
           </div>
         </li>
+        <!-- item end -->
+
+        <!-- item start -->
+        <li>
+          <div class="item-content">
+            <label>
+              <input type="checkbox" />
+              <p class="content">我要學區塊鏈</p>
+            </label>
+          </div>
+          <div class="item-control">
+            <a href="#" class="edit"><img class="icon" src="assets/pen-to-square-solid.svg" /></a>
+            <a href="#" class="delete"><img class="icon" src="assets/trash-can-solid.svg" /></a>
+          </div>
+        </li>
+        <!-- item end -->
+
+        <!-- item start -->
+        <li>
+          <div class="item-content">
+            <label>
+              <input type="checkbox" />
+              <p class="content">我要學 React</p>
+            </label>
+          </div>
+          <div class="item-control">
+            <a href="#" class="edit"><img class="icon" src="assets/pen-to-square-solid.svg" /></a>
+            <a href="#" class="delete"><img class="icon" src="assets/trash-can-solid.svg" /></a>
+          </div>
+        </li>
+        <!-- item end -->
+
+        <!-- item start -->
+        <li>
+          <div class="item-content">
+            <label>
+              <input type="checkbox" />
+              <p class="content">我要學 Vue</p>
+            </label>
+          </div>
+          <div class="item-control">
+            <a href="#" class="edit"><img class="icon" src="assets/pen-to-square-solid.svg" /></a>
+            <a href="#" class="delete"><img class="icon" src="assets/trash-can-solid.svg" /></a>
+          </div>
+        </li>
+        <!-- item end -->
+
+        <!-- item start -->
+        <li class="completed">
+          <div class="item-content">
+            <label>
+              <input type="checkbox" checked />
+              <p class="content">我要發大財</p>
+            </label>
+          </div>
+          <div class="item-control">
+            <a href="#" class="edit"><img class="icon" src="assets/pen-to-square-solid.svg" /></a>
+            <a href="#" class="delete"><img class="icon" src="assets/trash-can-solid.svg" /></a>
+          </div>
+        </li>
+        <!-- item end -->
       </ul>
     </section>
+    <footer>
+      <p>
+        powered by <a href="https://5xruby.tw" class="underline">5XCAMPUS</a> |
+        <a href="https://todoo.5xcamp.us" class="underline">API</a> |
+        <a href="https://github.com/5xTraining/todoo-app" class="underline">SOURCE</a>
+      </p>
+    </footer>
   </body>
 </html>

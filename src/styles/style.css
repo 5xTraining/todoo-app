@@ -8,7 +8,23 @@
   font-family: 'Shadows Into Light', cursive;
 }
 
-h1.banner {
+header.banner {
+
+}
+
+header.banner .subtitle {
+  @apply justify-between flex-none text-sm sm:flex;
+}
+
+header.banner .subtitle .text {
+  @apply px-2 mb-2 text-gray-500;
+}
+
+header.banner .subtitle a {
+  @apply underline;
+}
+
+header.banner h1 {
   @apply text-6xl font-thin handwrite_font;
 }
 
@@ -17,11 +33,11 @@ main.main {
 }
 
 .navbar > a {
-  @apply px-4 py-1 text-xl text-gray-800 hover:text-gray-500;
+  @apply px-2 py-1 text-xl text-gray-800 sm:px-4 hover:text-gray-500;
 }
 
 section.todo-list {
-  @apply px-8 my-2 bg-white rounded-sm shadow-sm;
+  @apply px-4 my-2 bg-white rounded-sm shadow-sm sm:px-8;
 }
 
 ul.items {
@@ -29,7 +45,7 @@ ul.items {
 }
 
 ul.items > li {
-  @apply flex items-center justify-between py-5 mb-4 text-2xl border-b border-gray-200 last:border-none last:mb-0;
+  @apply flex items-center justify-between py-5 mb-4 text-lg border-b border-gray-200 sm:text-2xl last:border-none last:mb-0;
 }
 
 ul.items input[type="checkbox"] {
@@ -37,7 +53,7 @@ ul.items input[type="checkbox"] {
 }
 
 ul.items .item-content {
-  @apply flex items-center px-2;
+  @apply flex items-center sm:px-2;
 }
 
 ul.items .item-content label {
@@ -49,11 +65,11 @@ ul.items .item-control {
 }
 
 .item-control a {
-  @apply px-4 py-3 mx-1 bg-gray-100 rounded-sm hover:bg-gray-200;
+  @apply px-2 py-2 mx-1 bg-gray-100 rounded-sm sm:px-4 sm:py-3 hover:bg-gray-200;
 }
 
 .icon {
-  @apply w-4 h-4;
+  @apply w-3 h-3 sm:w-4 sm:h-4;
 }
 
 
@@ -63,4 +79,12 @@ ul.items li.completed .content {
 
 ul.items li.completed .item-control .edit {
   @apply hidden;
+}
+
+input#taskInput {
+  @apply w-8/12 px-3 py-2 text-xl placeholder-gray-300 border border-gray-300 rounded-l sm:w-10/12 sm:px-5 sm:py-3 sm:text-2xl focus:outline-none;
+}
+
+footer p {
+  @apply block px-2 my-4 text-sm text-center text-gray-500 sm:hidden;
 }

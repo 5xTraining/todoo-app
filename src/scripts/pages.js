@@ -37,7 +37,6 @@ const showTaskPage = () => {
 }
 
 const showLoginPage = () => {
-  taskSection.classList.remove("hidden")
   taskSection.classList.add("hidden")
   loginSection.classList.remove("hidden")
   signUpSection.classList.add("hidden")

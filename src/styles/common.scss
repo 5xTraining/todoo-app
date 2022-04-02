@@ -7,3 +7,11 @@ footer {
 .icon {
   @apply w-3 h-3 sm:w-4 sm:h-4;
 }
+
+a.text-link {
+  @apply underline underline-offset-4;
+
+  &:hover {
+    @apply text-rose-500;
+  }
+}

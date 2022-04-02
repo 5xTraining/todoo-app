@@ -15,9 +15,9 @@
       <div class="subtitle">
         <p class="text">simple and studid todo app</p>
         <p class="hidden text sm:block">
-          proudly powered by <a href="https://5xruby.tw" target="_blank">5XCAMPUS</a> |
-          <a href="https://todoo.5xcamp.us" target="_blank">API</a> |
-          <a href="https://github.com/5xTraining/todoo-app" target="_blank">SOURCE</a>
+          proudly powered by <a href="https://5xruby.tw" class="text-link" target="_blank">5XCAMPUS</a> |
+          <a href="https://todoo.5xcamp.us" class="text-link" target="_blank">API</a> |
+          <a href="https://github.com/5xTraining/todoo-app" class="text-link" target="_blank">SOURCE</a>
         </p>
       </div>
     </header>
@@ -31,9 +31,10 @@
       </header>
 
       <section id="userSection">
+        <!-- Login Section start -->
         <section id="loginSection">
           <h1>登入</h1>
-          <form>
+          <form id="loginForm">
             <div class="field">
               <label>
                 <h3>Email</h3>
@@ -50,14 +51,16 @@
 
             <div class="items-center justify-between block sm:flex field">
               <button>登入</button>
-              <div class="text-xl text-gray-600">還沒有帳號嗎？<a href="#" class="underline signUpLink">註冊</a>一個吧！</div>
+              <div class="text-xl text-gray-600">還沒有帳號嗎？<a href="#" class="text-link signUpLink">註冊</a>一個吧！</div>
             </div>
           </form>
         </section>
+        <!-- Login Section end -->
 
+        <!-- Sign Up Section start -->
         <section id="signUpSection">
           <h1>註冊帳號</h1>
-          <form>
+          <form id="signUpForm">
             <div class="field">
               <label>
                 <h3>Email</h3>
@@ -81,21 +84,21 @@
 
             <div class="items-center justify-between block sm:flex field">
               <button>註冊</button>
-              <div class="text-xl text-gray-600">已經有帳號了？<a href="#" class="underline loginLink">登入</a></div>
+              <div class="text-xl text-gray-600">已經有帳號了？<a href="#" class="text-link loginLink">登入</a></div>
             </div>
           </form>
         </section>
-
+        <!-- Sign Up Section end -->
       </section>
 
+      <!-- TODO Section start -->
       <section id="taskSection">
-        <div class="flex justify-center">
-          <input autofocus type="text" id="taskInput" autocomplete="off" spellcheck="false" placeholder="做點重要的事吧..." />
-          <button id="addBtn" class="px-6 py-2 text-xl rounded-sm rounded-r bg-rose-500 text-rose-100 hover:bg-rose-400">
-            新增
-          </button>
-        </div>
+        <form id="todoForm">
+          <input type="text" id="taskInput" autocomplete="off" spellcheck="false" placeholder="做點重要的事吧..." />
+          <button id="addTodoBtn">新增</button>
+        </form>
       </section>
+      <!-- TODO Section end -->
     </main>
 
     <section class="todo-list">

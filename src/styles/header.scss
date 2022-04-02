@@ -1,0 +1,36 @@
+header.banner {
+  h1 {
+    @apply text-6xl font-thin;
+    font-family: 'Shadows Into Light', cursive;
+  }
+
+  .subtitle {
+    @apply justify-between flex-none text-sm sm:flex;
+
+    .text {
+      @apply px-2 mb-2 text-gray-500;
+    }
+
+    a {
+      @apply underline;
+    }
+  }
+}
+
+main.main {
+  @apply bg-white rounded-sm shadow-sm;
+
+  section#taskSection {
+    @apply flex justify-center hidden pt-4 pb-8;
+
+    input#taskInput {
+      @apply w-8/12 px-3 py-2 text-xl placeholder-gray-300 border border-gray-300 rounded-l sm:w-10/12 sm:px-5 sm:py-3 sm:text-2xl focus:outline-none;
+    }
+  }
+}
+
+.navbar {
+  a {
+    @apply px-2 py-1 text-xl text-gray-800 sm:px-4 hover:text-gray-500;
+  }
+}

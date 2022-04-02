@@ -1,100 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
-
-header.banner {
-  h1 {
-    @apply text-6xl font-thin;
-    font-family: 'Shadows Into Light', cursive;
-  }
-
-  .subtitle {
-    @apply justify-between flex-none text-sm sm:flex;
-
-    .text {
-      @apply px-2 mb-2 text-gray-500;
-    }
-
-    a {
-      @apply underline;
-    }
-  }
-}
-
-main.main {
-  @apply bg-white rounded-sm shadow-sm;
-}
-
-.navbar {
-  a {
-    @apply px-2 py-1 text-xl text-gray-800 sm:px-4 hover:text-gray-500;
-  }
-}
-
-section#signUpSection {
-  @apply flex justify-center pt-4 pb-8;
-}
-
-section#signUpSection form .field {
-  @apply flex;
-}
-
-section#taskSection {
-  @apply flex justify-center hidden pt-4 pb-8;
-}
-
 section.todo-list {
   @apply px-4 my-2 bg-white rounded-sm shadow-sm sm:px-8;
-}
 
-ul.items {
-  @apply py-1;
+  ul.items {
+    @apply py-1;
 
-  li {
-    @apply flex items-center justify-between py-5 mb-4 text-lg border-b border-gray-200 sm:text-2xl last:border-none last:mb-0;
+    input[type="checkbox"] {
+      @apply mr-2 border border-gray-400 rounded form-checkbox;
+    }
 
-    &.completed {
-      .item-control {
-        .edit {
-          @apply hidden;
+    li {
+      @apply flex items-center justify-between py-5 mb-4 text-lg border-b border-gray-200 sm:text-2xl last:border-none last:mb-0;
+
+      &.completed {
+        .item-control {
+          .edit {
+            @apply hidden;
+          }
+        }
+
+        .content {
+          @apply text-gray-400 line-through;
         }
       }
+    }
 
-     .content {
-        @apply text-gray-400 line-through;
+    .item-control {
+      @apply flex;
+
+      a {
+        @apply px-2 py-2 mx-1 bg-gray-100 rounded-sm sm:px-4 sm:py-3 hover:bg-gray-200;
       }
     }
-  }
 
-  .item-control {
-    @apply flex;
+    .item-content {
+      @apply flex items-center sm:px-2;
 
-    a {
-      @apply px-2 py-2 mx-1 bg-gray-100 rounded-sm sm:px-4 sm:py-3 hover:bg-gray-200;
+      label {
+        @apply flex items-center px-2 cursor-pointer;
+      }
     }
-  }
-
-  .item-content {
-    @apply flex items-center sm:px-2;
-
-    label {
-      @apply flex items-center px-2 cursor-pointer;
-    }
-  }
-}
-
-ul.items input[type="checkbox"] {
-  @apply mr-2 border border-gray-400 rounded form-checkbox;
-}
-
-.icon {
-  @apply w-3 h-3 sm:w-4 sm:h-4;
-}
-
-input#taskInput {
-  @apply w-8/12 px-3 py-2 text-xl placeholder-gray-300 border border-gray-300 rounded-l sm:w-10/12 sm:px-5 sm:py-3 sm:text-2xl focus:outline-none;
-}
-
-footer {
-  p {
-    @apply block px-2 my-4 text-sm text-center text-gray-500 sm:hidden;
   }
 }

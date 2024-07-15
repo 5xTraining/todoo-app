@@ -17,10 +17,9 @@
 - You may use any packages or frameworks as you want.
 - Happy Hacking, and all PRs are welcome :)
 
-## Stacks
+## Tech Stacks
 
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Parcel](https://parceljs.org/) as bulinding tool
-- and Vanilla JavaScript
 
 by dev@5xcampus.com

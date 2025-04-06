@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 .form-checkbox {
   @apply w-6 h-6;
@@ -61,7 +59,7 @@ section.todo-list {
     @apply py-1;
 
     & input[type="checkbox"] {
-      @apply mr-2 border border-gray-400 rounded form-checkbox;
+      @apply mr-2 border border-gray-400 rounded;
     }
 
     & li {
@@ -154,10 +152,6 @@ section#userSection {
   }
 }
 
-.form-checkbox {
-  @apply w-6 h-6;
-}
-
 header.banner {
   & h1 {
     @apply text-6xl font-thin;
@@ -212,7 +206,7 @@ section.todo-list {
     @apply py-1;
 
     & input[type="checkbox"] {
-      @apply mr-2 border border-gray-400 rounded form-checkbox;
+      @apply mr-2 border border-gray-400 rounded;
     }
 
     & li {
